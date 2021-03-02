@@ -1,0 +1,10 @@
+version: "2"
+services:
+  mongo:
+    container_name: beeone-db
+    restart: always
+    image: mongo
+    volumes:
+      - ./db:/data/db
+    ports:
+      - 27017:27017
